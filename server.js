@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-const MAIN_SERVICE_URL = process.env.MAIN_SERVICE_URL || 'https://chatmate-cf4d.onrender.com/health';
+const MAIN_SERVICE_URL = process.env.MAIN_SERVICE_URL;
 
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
