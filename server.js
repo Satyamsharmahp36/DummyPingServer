@@ -25,5 +25,5 @@ const pingMainService = async () => {
 app.listen(PORT, () => {
   console.log(`Ping service running on port ${PORT}`);
   
-  setInterval(pingMainService, 10 * 60 * 1000);
+  // setInterval(pingMainService, 10 * 60 * 1000);
 });
